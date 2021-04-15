@@ -1,0 +1,66 @@
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+html {
+  font-family: 'Crimson Text', serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: black;
+  }
+  h1 {
+    font-style: italic;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .direction {
+      text-align: center;
+      color: white;
+  }
+
+  .main {
+    display: flex;
+    overflow: hidden;
+    height: 52vw;
+    background: rgb(0, 0, 0);
+  }
+  
+  .main img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 2px solid black;
+    box-sizing: border-box;
+    transition: opacity .2s;
+  }
+  
+  .main:hover img {
+    opacity: 0.5;
+  }
+  
+  .main img:hover {
+    opacity: 1;
+  }
+  
+  .main .single-column {
+      animation: var(--animation, none) 16s infinite linear;
+  }
+  
+  .main .single-column:hover {
+      animation-play-state: paused;
+  }
+  
+  .main .single-column:nth-of-type(odd) {
+    align-self: flex-end;
+    --direction: 50%;
+  }
+  
+  @keyframes slide {
+    to {
+      -webkit-transform: translateY(var(--direction, -50%));
+              transform: translateY(var(--direction, -50%));
+    }
+  }

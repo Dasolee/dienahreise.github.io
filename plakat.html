@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- code by webdevtrick ( https://webdevtrick.com ) -->
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Die Nah-Reise</title>
+      <link rel="stylesheet" href="style.css">
+	  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+	  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+    <div class="direction">
+        <h1>Viel Spaß mit deiner Nah-Reise! <a href="index.html"><u>(hier click &#187; zurück)</u></a></h1>
+    </div>
+
+  <div class="main">
+
+    <div class="single-column">
+		<a href="#"><img src="image/poster_RGB-01.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-02.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-07.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+	<div class="single-column">
+		<a href="#"><img src="image/poster_RGB-03.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-04.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-05.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-21.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+	<div class="single-column">
+		<a href="#"><img src="image/poster_RGB-39.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-37.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-43.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+	<div class="single-column">
+		<a href="#"><img src="image/poster_RGB-18.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-19.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-09.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+    <div class="single-column">
+		<a href="#"><img src="image/poster_RGB-24.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-25.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-23.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+    <div class="single-column">
+		<a href="#"><img src="image/poster_RGB-40.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-41.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-30.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+    <div class="single-column">
+		<a href="#"><img src="image/poster_RGB-22.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-13.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+		<a href="#"><img src="image/poster_RGB-12.jpg" alt="image" onclick="fnImgPop(this.src)"></a>
+	</div>
+
+</div>
+  
+    <script  src="function.js"></script>
+    <script type="text/javascript">
+        //<!--
+         function fnImgPop(url){
+          var img=new Image();
+          img.src=url;
+          var img_width=img.width;
+          var win_width=img.width+25;
+          var img_height=img.height;
+          var win=img.height+30;
+          var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+img_height+', menubars=no, scrollbars=auto');
+          OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
+         }
+        //-->
+        </script> 
+
+</body>
+</html>

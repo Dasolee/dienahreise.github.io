@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./fullpage.min.css" />
+    <link rel="stylesheet" href="./index.css">
+    <script src="./fullpage.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li data-menuanchor="section1"></li>><a href="#section1">Home</a></li>
+                <li data-menuanchor="section2"></li>><a href="#section2">Einleitung</a></li>
+                <li data-menuanchor="section3"></li>><a href="#section3">Fotografien</a></li>
+                <li data-menuanchor="section4"></li>><a href="#section4">Publikation</a></li>
+                <li data-menuanchor="section5"></li>><a href="#section5">Inspiration vom Alltag</a></li>
+                <li data-menuanchor="section6"></li>><a href="#section6">Plakate</a></li>
+                <li data-menuanchor="section7"></li>><a href="plakat.html">mehr Plakaten</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="full-page">
+
+        <div class="section S1">
+            <h2><b>Die Nah-Reise.</b>
+                <br>Wie entdecke ich 
+                <br>meinen Alltag?</h2>
+        </div>
+
+        <div class="section S2">
+        </div>
+
+        <div class="section S3">
+            <div class="videowrapper">
+                <video muted autoplay controls loop>
+                    <source src="image/video_prozess.mp4" type="video/mp4">
+                    zzz
+                    <strong>Your browser does not support the video tag.</strong>
+            </div>
+        </div>
+
+        <div class="section S4">
+                <div class="slide"><img src="./image/repros_01.jpg"></div>
+                <div class="slide"><img src="./image/repros_02.jpg"></div>
+                <div class="slide"><img src="./image/repros_03.jpg"></div>
+                <div class="slide"><img src="./image/repros_04.jpg"></div>
+                <div class="slide"><img src="./image/repros_05.jpg"></div>
+                <div class="slide"><img src="./image/repros_06.jpg"></div>
+                <div class="slide"><img src="./image/repros_07.jpg"></div>
+                <div class="slide"><img src="./image/repros_08.jpg"></div>
+                <div class="slide"><img src="./image/repros_09.jpg"></div>
+                <div class="slide"><img src="./image/repros_10.jpg"></div>
+                <div class="slide"><img src="./image/repros_11.jpg"></div>
+                <div class="slide"><img src="./image/repros_12.jpg"></div>
+            </div>
+
+            <div class="section S5">
+                <div class="videowrapper">
+                    <video muted autoplay controls loop>
+                        <source src="image/inspiration.mp4" type="video/mp4">
+                        zzz
+                        <strong>Your browser does not support the video tag.</strong>
+                </div>
+            </div>
+    
+            <div class="section S6">
+                <div class="slide"><img src="./image/plakat_auswahl_01.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_02.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_03.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_04.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_05.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_06.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_07.jpg"></div>
+                <div class="slide"><img src="./image/plakat_auswahl_08.jpg"></div>
+                <div class="slide"><img src="./image/plakat_mockup_01.jpg"></div>
+                <div class="slide"><img src="./image/plakat_mockup_02.jpg"></div>
+
+            </div>
+
+        </div>
+    
+    
+    <script>
+    new fullpage('#full-page', {
+        licenseKey: '',
+        sectionsColor: ['######', '#fffcf0', '######', '######', '######', '######'],
+        scrollSpeed: 1500,
+        anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', ],
+
+    });
+    </script>
+
+</body>
+</html>
