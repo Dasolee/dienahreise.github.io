@@ -1,0 +1,247 @@
+@charset 'utf-8';
+html {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+    text-align: center;
+	line-height: 1.7;
+}
+body {
+	margin: 0 auto;
+	color: rgb(255, 255, 255);
+	letter-spacing: -0.05em;
+    background: black;
+}
+p {
+	line-height: 1.6;
+}
+a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 1em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: light;
+}
+.index-image {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.container {
+	/* iPhone 가로 스크롤 방지 */
+	overflow-x: hidden;
+    text-align: center;
+}
+.global-nav {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	z-index: 11;
+	width: 100%;
+	height: 70px;
+	padding: 0 1rem;
+	font-size: 18px;
+}
+.global-nav-links {
+	display: flex;
+	align-items: center;
+	max-width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.global-nav-links {
+	justify-content: space-between;
+}
+.global-nav-1 {
+	position: absolute;
+	align-items: center;
+	margin: 0 auto;
+	display: flex;
+	top: 100px;
+	left: 0;
+	padding: 0.4rem 0.4rem;
+	font-size: 18px;
+	max-width: 750px;
+}
+.text {
+	text-align: left;
+    margin: 35px 30px;
+    position: absolute;
+    top: 300px;
+    left: 1230px;
+    line-height: 1.4rem;
+    word-spacing: 0.1rem;
+}
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap {
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute; 
+    top: 50px; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    max-width: 100%; 
+    height: auto;
+}
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+.section .slidelist > li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section .slidelist > li > a img {
+    width: 100%;
+}
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+    opacity: 30%;
+}
+.section .slidelist .left {
+    left: -15px;
+    background: url(./left-arrow.png) center center / 50% no-repeat;
+}
+.section .slidelist .right {
+    right: -15px;
+    background: url(./right-arrow.png) center center / 50% no-repeat;
+}
+.section [id="slide100"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide102"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide103"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section [id="slide104"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section [id="slide105"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section [id="slide106"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+.section [id="slide107"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section [id="slide108"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap {
+    max-width: 1200px;
+    margin: 15px 30px;
+    overflow: hidden;
+}
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+.section .slidelist > li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section01 .slidelist > li > a img {
+    width: 100%;
+}
+
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide01 55s infinite;}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+.section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section [id="slide09"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+.section [id="slide10"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-900%);}
+.section [id="slide11"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1000%);}
+.section [id="slide12"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1100%);}
+.section [id="slide13"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1200%);}
+
+@keyframes slide01 {
+    0% {left: 0%;}
+    7% {left: 0%;}
+    14% {left: -100%;}
+    21% {left: -200%;}
+    28% {left: -300%;}
+    33% {left: -400%;}
+    40% {left: -500%;}
+    49% {left: -600%;}
+    55% {left: -700%;}
+    62% {left: -800%;}
+    70% {left: -900%;}
+    78% {left: -1000%;}
+    87% {left: -1100%;}
+    95% {left: -1200%;}
+    100% {left: -1200%;}
+}
+
+.section [id="slide0001"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide0001 85s infinite;}
+.section [id="slide0002"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide0003"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide0004"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section [id="slide0005"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section [id="slide0006"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section [id="slide0007"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+.section [id="slide0008"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section [id="slide0009"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+.section [id="slide0010"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-900%);}
+.section [id="slide0011"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1000%);}
+.section [id="slide0012"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1100%);}
+.section [id="slide0013"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1200%);}
+.section [id="slide0014"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1300%);}
+.section [id="slide0015"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1400%);}
+.section [id="slide0016"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1500%);}
+.section [id="slide0017"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1600%);}
+.section [id="slide0018"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1700%);}
+.section [id="slide0019"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1800%);}
+.section [id="slide0020"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1900%);}
+.section [id="slide0021"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2000%);}
+.section [id="slide0022"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2100%);}
+
+
+@keyframes slide0001 {
+    0% {left: 0%;}
+    5% {left: 0%;}
+    9% {left: -100%;}
+    13% {left: -200%;}
+    17% {left: -300%;}
+    20% {left: -400%;}
+    24% {left: -500%;}
+    28% {left: -600%;}
+    31% {left: -700%;}
+    36% {left: -800%;}
+    39% {left: -900%;}
+    42% {left: -1000%;}
+    45% {left: -1100%;}
+    49% {left: -1200%;}
+    55% {left: -1300%;}
+    59% {left: -1400%;}
+    63% {left: -1500%;}
+    69% {left: -1600%;}
+    72% {left: -1700%;}
+    79% {left: -1800%;}
+    82% {left: -1900%;}
+    89% {left: -2000%;}
+    98% {left: -2100%;}
+    100% {left: -2100%;}
+}
