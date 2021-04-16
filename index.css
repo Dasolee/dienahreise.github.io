@@ -21,7 +21,6 @@ header nav ul {
 header nav ul li {
     margin: 0 20px;
     list-style: none;
-    text-align: center;
 }
 a {
     color: rgb(255, 255, 255);
@@ -29,24 +28,20 @@ a {
     font-size: 20px;
 }
 .S1 {
-    background-image: url('image/brutal_021.jpg');
+    background-image: url('image/cover00.png');
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: top;
     background-position-y: center;
+    background-size: 102%;
+}
+.coverimage {
+    padding-left: 20px;
 }
 .S2 {
     background-image: url('image/einleitung.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-}
-.S1 h2{
-    color: rgb(255, 255, 255);
-    margin-top: 690px;
-    margin-left: 30px;
-    font-size: 80px;
-    word-spacing: -5px;
-    line-height: 80px;
 }
 .S3 {
     margin: 0 auto;
