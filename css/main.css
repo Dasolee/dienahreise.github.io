@@ -126,16 +126,6 @@ a {
     right: -15px;
     background: url(./right-arrow.png) center center / 50% no-repeat;
 }
-.section [id="slide100"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
-.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
-.section [id="slide102"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
-.section [id="slide103"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
-.section [id="slide104"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
-.section [id="slide105"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
-.section [id="slide106"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
-.section [id="slide107"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
-.section [id="slide108"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
-
 .section input[id*="slide"] {
     display: none;
 }
@@ -163,6 +153,68 @@ a {
     width: 100%;
 }
 
+    /* 01. Weltformat */
+.section [id="slide10001"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide10001 25s infinite;}
+.section [id="slide10002"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide10003"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide10004"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+    
+@keyframes slide10001 {
+    0% {left: 0%;}
+    20% {left: 0%;}
+    40% {left: -100%;}
+    60% {left: -200%;}
+    80% {left: -300%;}
+    100% {left: -300%;}
+    }
+
+    /* 03. SIDESIDE */
+.section [id="slide1111"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide1111 30s infinite;}
+.section [id="slide1112"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide1113"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide1114"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section [id="slide1115"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section [id="slide1116"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section [id="slide1117"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+
+@keyframes slide1111 {
+    0% {left: 0%;}
+    12% {left: 0%;}
+    24% {left: -100%;}
+    38% {left: -200%;}
+    51% {left: -300%;}
+    64% {left: -400%;}
+    77% {left: -500%;}
+    90% {left: -600%;}
+    100% {left: -600%;}
+}
+
+    /* 05. Manifest */
+.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide101 45s infinite;}
+.section [id="slide102"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section [id="slide103"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section [id="slide104"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section [id="slide105"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section [id="slide106"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section [id="slide107"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+.section [id="slide108"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section [id="slide109"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+
+@keyframes slide101 {
+    0% {left: 0%;}
+    10% {left: 0%;}
+    19% {left: -100%;}
+    29% {left: -200%;}
+    39% {left: -300%;}
+    49% {left: -400%;}
+    59% {left: -500%;}
+    69% {left: -600%;}
+    79% {left: -700%;}
+    89% {left: -800%;}
+    100% {left: -800%;}
+}
+
+    /* 02. AAIP */
 .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide01 55s infinite;}
 .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
@@ -195,6 +247,7 @@ a {
     100% {left: -1200%;}
 }
 
+/* 04.Brutal */
 .section [id="slide0001"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide0001 85s infinite;}
 .section [id="slide0002"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide0003"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
