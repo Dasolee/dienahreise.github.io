@@ -154,19 +154,10 @@ a {
 }
 
     /* 01. Weltformat */
-.section [id="slide10001"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide10001 25s infinite;}
+.section [id="slide10001"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section [id="slide10002"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide10003"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
 .section [id="slide10004"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
-    
-@keyframes slide10001 {
-    0% {left: 0%;}
-    20% {left: 0%;}
-    40% {left: -100%;}
-    60% {left: -200%;}
-    80% {left: -300%;}
-    100% {left: -300%;}
-    }
 
     /* 03. SIDESIDE */
 .section [id="slide1111"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide1111 30s infinite;}
@@ -190,7 +181,7 @@ a {
 }
 
     /* 05. Manifest */
-.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide101 45s infinite;}
+.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide101 50s;}
 .section [id="slide102"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide103"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
 .section [id="slide104"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
@@ -199,19 +190,21 @@ a {
 .section [id="slide107"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
 .section [id="slide108"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
 .section [id="slide109"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+.section [id="slide110"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-900%);}
 
 @keyframes slide101 {
     0% {left: 0%;}
-    10% {left: 0%;}
-    19% {left: -100%;}
-    29% {left: -200%;}
-    39% {left: -300%;}
-    49% {left: -400%;}
-    59% {left: -500%;}
-    69% {left: -600%;}
-    79% {left: -700%;}
-    89% {left: -800%;}
-    100% {left: -800%;}
+    9% {left: 0%;}
+    17% {left: -100%;}
+    25% {left: -200%;}
+    34% {left: -300%;}
+    45% {left: -400%;}
+    56% {left: -500%;}
+    66% {left: -600%;}
+    76% {left: -700%;}
+    85% {left: -800%;}
+    93% {left: -900%;}
+    100% {left: -900%;}
 }
 
     /* 02. AAIP */
