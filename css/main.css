@@ -181,7 +181,7 @@ a {
 }
 
     /* 05. Manifest */
-.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%); animation: slide101 50s;}
+.section [id="slide101"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section [id="slide102"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide103"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
 .section [id="slide104"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
