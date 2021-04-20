@@ -65,11 +65,13 @@
           var img=new Image();
           img.src=url;
           var img_width=img.width;
-          var win_width=img.width+25;
-          var img_height=img.height;
-          var win=img.height+30;
-          var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+img_height+', menubars=no, scrollbars=auto');
-          OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
+		  var img_height=img.height;
+
+          var win_width=img.width+10;
+          var win_height=img.height+30;
+          var OpenWindow=window.open('','_blank', 'width='+win_width+', height='+win_height+', menubars=no, scrollbars=auto');
+          //OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
+		  OpenWindow.document.write("<style>body{margin:4px; background-color:black;}</style><img src='"+url+"' width='"+img_width+"' height='"+img_height+"'>");
          }
         //-->
         </script> 
